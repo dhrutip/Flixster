@@ -3,6 +3,7 @@ package com.example.flixter.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,6 +93,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     .placeholder(R.mipmap.placeholder_foreground)
                     .transform(new RoundedCornersTransformation(radius, margin))
                     .into(ivPoster);
+            /*tvTitle.setTextColor(Color.rgb(128,0,128));*/
         }
 
         @Override
