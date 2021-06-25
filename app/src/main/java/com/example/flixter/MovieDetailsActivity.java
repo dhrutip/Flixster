@@ -2,6 +2,7 @@ package com.example.flixter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuView;
+import androidx.constraintlayout.widget.Placeholder;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -52,17 +53,20 @@ public class MovieDetailsActivity extends AppCompatActivity {
         binding.tvOverviewMovie.setText(movie.getOverview());
 
         String imageUrl;
+        int placeholder;
         if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             imageUrl = movie.getBackdropPath();
+            placeholder = R.mipmap.backdrop_placeholder_foreground;
         } else {
             imageUrl = movie.getPosterPath();
+            placeholder = R.mipmap.placeholder_foreground;
         }
 
         int radius = 25; // corner radius, higher value = more rounded
         int margin = 7; // crop margin, set to 0 for corners with no crop
         Glide.with(this)
                 .load(imageUrl)
-                .placeholder(R.mipmap.placeholder_foreground)
+                .placeholder(placeholder)
                 .transform(new RoundedCornersTransformation(radius, margin))
                 .into(binding.igView);
 
