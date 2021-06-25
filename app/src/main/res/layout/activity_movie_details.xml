@@ -51,4 +51,13 @@
         android:layout_centerHorizontal="true"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <ImageView
+        android:id="@+id/playImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvTitleMovie"
+        android:layout_marginTop="-80dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
 </RelativeLayout>

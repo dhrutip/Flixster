@@ -56,4 +56,13 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/playImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/igView"
+        android:layout_alignBottom="@id/igView"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
 </RelativeLayout>
