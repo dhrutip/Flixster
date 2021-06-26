@@ -33,7 +33,7 @@ Here's a walkthrough of implemented user stories (both required and stretch):
 [Scrolling](scroll.gif) | 
 [Movie Details and Trailer](details.gif)
 
-GIF created with [Kap](https://getkap.co/).
+GIFs created with [LICEcap](https://www.cockos.com/licecap/).
 
 ## Notes
 
